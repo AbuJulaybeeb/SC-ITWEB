@@ -93,15 +93,16 @@ body {
       box-shadow: 0 2px 8px rgba(0,100,0,0.07);
     }
     
-    /*Responsiveness*/
-  @media (max-width: 1400px) {
+/* Responsive adjustments */
+@media (max-width: 1400px) {
   body {
     background-size: 500px;
   }
 
   .login-container input[type="text"],
   .login-container input[type="password"] {
-    width: 100%;
+    width: 450px;
+    height: 32px;
     padding: 4px 6px;
     font-size: 0.8em;
   }
@@ -114,62 +115,186 @@ body {
     font-size: 2.2em;
   }
 }
+
 @media (max-width: 700px) {
-  .login-container {
-    max-width: 300px;
-    padding: 25px 20px;
+  body {
+    background-size: 500px;
   }
-  .login-container h2 {
-    font-size: 18px;
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 435px;
+    height: 30px;
+    padding: 4px 6px;
+    font-size: 0.8em;
+  }
+
+  .login-container {
+    padding: 35px 30px;
   }
 }
 
 @media (max-width: 500px) {
+  body {
+    background-size: 450px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 400px;
+    height: 28px;
+    padding: 4px 6px;
+    font-size: 0.8em;
+  }
+
   .login-container {
-    max-width: 250px;
+    padding: 30px 25px;
+    margin: 15px;
+  }
+  .login-container h2 {
+    font-size: 1.9em;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  body {
+    background-size: 370px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 365px;
+    height: 26px;
+    padding: 4px 6px;
+    font-size: 0.8em;
+  }
+
+
+  .login-container {
+    padding: 25px 20px;
+    margin: 10px;
+  }
+  .login-container h2 {
+    font-size: 1.7em;
+  }
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 10px 12px;
+    font-size: 0.95em;
+  }
+  .login-container button {
+    padding: 10px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  body {
+    background-size: 300px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 345px;
+    height: 26px;
+    padding: 4px 6px;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 400px) {
+   body {
+    background-size: 200px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 215px;
+    height: 26px;
+    padding: 4px 6px;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 201px) and (max-width: 300px) {
+   body {
+    background-size: 150px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 185px;
+    height: 26px;
+    padding: 4px 6px;
+    font-size: 0.8em;
+  }
+
+
+  .login-container {
     padding: 20px 15px;
+    margin: 5px;
   }
   .login-container h2 {
-    font-size: 16px;
+    font-size: 1.4em;
   }
-}
-
-@media (max-width: 400px) {
-  .login-container {
-    max-width: 200px;
-    padding: 15px 10px;
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 8px 10px;
+    font-size: 0.9em;
   }
-  .login-container h2 {
-    font-size: 14px;
+  .login-container button {
+    padding: 8px;
+    font-size: 0.9em;
   }
-}
-
-@media (max-width: 300px) {
-  .login-container {
-    max-width: 150px;
-    padding: 10px 5px;
-  }
-  .login-container h2 {
-    font-size: 12px;
+  .login-container .signup-link {
+    font-size: 0.9em;
   }
 }
 
 @media (max-width: 200px) {
+  body {
+    background-size: 100px;
+  }
+
   .login-container {
-    max-width: 100px;
-    padding: 5px;
+    padding: 15px 10px;
+    margin: 2px;
   }
   .login-container h2 {
-    font-size: 10px;
+    font-size: 1.2em;
+  }
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 6px 8px;
+    font-size: 0.85em;
+  }
+  .login-container button {
+    padding: 6px;
+    font-size: 0.8em;
+  }
+  .login-container .signup-link {
+    font-size: 0.8em;
   }
 }
 
 @media (max-width: 100px) {
   .login-container {
-    max-width: 80px;
-    padding: 5px;
+    padding: 10px 5px;
   }
   .login-container h2 {
-    font-size: 8px;
+    font-size: 1em;
+  }
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 300px;
+    padding: 4px 6px;
+    font-size: 0.8em;
+  }
+  .login-container button {
+    padding: 4px;
+    font-size: 0.7em;
+  }
+  .login-container .signup-link {
+    font-size: 0.7em;
   }
 }

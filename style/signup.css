@@ -106,19 +106,19 @@ h1 {
   .signup-container input[type="text"],
   .signup-container input[type="email"],
   .signup-container input[type="password"] {
-    width: 100%;
+    width: 350px;
+    height: 32px;
     padding: 4px 6px;
     font-size: 0.8em;
   }
 
-  .signup-container {
+  .login-container {
     max-width: 450px;
     padding: 50px 40px;
   }
-  .signup-container h2 {
+  .login-container h2 {
     font-size: 2.2em;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -163,18 +163,6 @@ h1 {
   }
 }
 
-#verification-section {
-  margin-top: 10px;
-}
-
-#verification-section input {
-  margin-bottom: 10px;
-}
-
-#verification-section button {
-  margin-top: 5px;
-}
-
 button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
@@ -193,48 +181,6 @@ button:disabled {
   margin-bottom: 0; /* Remove default margin */
 }
 
-#send-verification-code {
-  position: absolute;
-  right: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 70px; /* Adjust width as needed */
-  height: 30px; /* Adjust height as needed */
-  padding: 5px;
-  font-size: 0.9em;
-}
-@media (max-width: 700px) {
-  .signup-container {
-    max-width: 350px;
-    padding: 25px 20px;
-  }
-}
 
-@media (max-width: 500px) {
-  .signup-container {
-    max-width: 300px;
-    padding: 20px 15px;
-  }
-}
 
-@media (max-width: 300px) {
-  .signup-container {
-    max-width: 250px;
-    padding: 15px 10px;
-  }
-}
-
-@media (max-width: 200px) {
-  .signup-container {
-    max-width: 200px;
-    padding: 10px 5px;
-  }
-}
-
-@media (max-width: 100px) {
-  .signup-container {
-    max-width: 150px;
-    padding: 5px;
-  }
-}
 
